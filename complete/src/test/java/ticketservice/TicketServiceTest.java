@@ -1,7 +1,8 @@
 package test.tickserv; 
 
 import org.junit.Test; 
-import org.junit.Before; 
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.After;
 
 import tickserv.TicketService;
@@ -16,14 +17,31 @@ import tickserv.TicketService;
 */ 
 public class TicketServiceTest {
     private static TicketService testTicketService;
+    private static TicketService virginTicketService; /* another service which hasn't been modified yet */
+
+    private static tickserv.SeatHold testSeatHold1;
+    private static tickserv.SeatHold testSeatHold2;
+    private static tickserv.SeatHold testSeatHold3;
+    private static tickserv.SeatHold testSeatHold4;
+    private static tickserv.SeatHold testSeatHold5;
+    private static tickserv.SeatHold testSeatHold6;
+
+    private static final String customerEmail = "test@example.com";
+    private static final String alternateCustomerEmail = "test2@bar.com";
+
     /* use a relatively small auditorium for these tests, for simplicity and readability */
     private static final int AUD_DEPTH = 6;
-    private static final int AUD_WIDTH = 7;
-    private static final int HOLD_EXP_IN_SECONDS = 2;
+    private static final int AUD_WIDTH = 8;
+    private static final int HOLD_EXP_IN_SECONDS = 200;
 
-@Before
-public void before() throws Exception {
+@BeforeClass
+public static void beforeClass() throws Exception {
     testTicketService = new TicketService(AUD_DEPTH, AUD_WIDTH, HOLD_EXP_IN_SECONDS);
+    virginTicketService = new TicketService(AUD_DEPTH, AUD_WIDTH, HOLD_EXP_IN_SECONDS);
+
+    testSeatHold1 = testTicketService.findAndHoldSeats(5, customerEmail);
+    testSeatHold2 = testTicketService.findAndHoldSeats(4, customerEmail);
+
 } 
 
 @After
@@ -49,25 +67,6 @@ public void testGetAuditoriumDepth() throws Exception {
 public void testGetAuditoriumWidth() throws Exception {
     assert (testTicketService.getAuditoriumWidth() == AUD_WIDTH);
 }
-    /**
-* 
-* Method: revertExpiredHolds() 
-* 
-*/ 
-@Test
-public void testRevertExpiredHolds() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setAuditoriumSeatsStatus(int seatsRow, int seatNum, SeatStatus newStatus) 
-* 
-*/ 
-@Test
-public void testSetAuditoriumSeatsStatus() throws Exception { 
-//TODO: Test goes here... 
-} 
 
 /** 
 * 
@@ -76,58 +75,11 @@ public void testSetAuditoriumSeatsStatus() throws Exception {
 */ 
 @Test
 public void testGetAuditoriumSeatsStatus() throws Exception { 
-//TODO: Test goes here... 
+//TODO: Test goes here...
+    assert(virginTicketService.getAuditoriumSeatsStatus(1,1) == TicketService.SeatStatus.AVAILABLE);
+    assert(testTicketService.getAuditoriumSeatsStatus(1,3) != TicketService.SeatStatus.AVAILABLE);
 } 
 
-/** 
-* 
-* Method: setAuditoriumHoldId(int seatsRow, int seatNum, int holdId) 
-* 
-*/ 
-@Test
-public void testSetAuditoriumHoldId() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setAuditoriumHoldTime(int seatsRow, int seatNum, long timeHeld) 
-* 
-*/ 
-@Test
-public void testSetAuditoriumHoldTime() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: getAuditoriumHoldTime(int seatsRow, int seatNum) 
-* 
-*/ 
-@Test
-public void testGetAuditoriumHoldTime() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setAuditoriumReservedSeatEmails(int seatsRow, int seatNum, String email) 
-* 
-*/ 
-@Test
-public void testSetAuditoriumReservedSeatEmails() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: getAuditoriumReservedSeatEmails(int seatsRow, int seatNum) 
-* 
-*/ 
-@Test
-public void testGetAuditoriumReservedSeatEmails() throws Exception { 
-//TODO: Test goes here... 
-} 
 
 /** 
 * 
@@ -136,7 +88,7 @@ public void testGetAuditoriumReservedSeatEmails() throws Exception {
 */ 
 @Test
 public void testShowAuditoriumMap() throws Exception {
-    String [] map = testTicketService.showAuditoriumMap(0);
+    String [] map = virginTicketService.showAuditoriumMap(0);
 
     assert(map.length == AUD_DEPTH);
     assert(map[0].length() == AUD_WIDTH);
@@ -149,7 +101,7 @@ public void testShowAuditoriumMap() throws Exception {
 */ 
 @Test
 public void testNumSeatsAvailable() throws Exception { 
-    int countAvailable = testTicketService.numSeatsAvailable();
+    int countAvailable = virginTicketService.numSeatsAvailable();
 
     assert(countAvailable == AUD_DEPTH * AUD_WIDTH);
 }
@@ -161,7 +113,9 @@ public void testNumSeatsAvailable() throws Exception {
 */ 
 @Test
 public void testFindAndHoldSeats() throws Exception { 
-//TODO: Test goes here... 
+    testSeatHold3 = testTicketService.findAndHoldSeats(4, customerEmail);
+
+//    assert(testSeatHold3.getSeatHoldIndex() == 3);
 } 
 
 /** 
@@ -171,7 +125,8 @@ public void testFindAndHoldSeats() throws Exception {
 */ 
 @Test
 public void testReserveSeats() throws Exception { 
-//TODO: Test goes here... 
+    String reserve1 = testTicketService.reserveSeats(testSeatHold1.getSeatHoldIndex(),customerEmail);
+    assert(! reserve1.startsWith("FAILURE"));
 } 
 
 
