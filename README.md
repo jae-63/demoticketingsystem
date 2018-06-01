@@ -33,25 +33,20 @@ run the provided test suite, which takes about 30 seconds:
 You can see a sample output of that suite in testsuite.OUTPUT.txt
 
 
-### Break down into end to end tests
+## Sample usage of API endpoints
+* curl -i http://localhost:8080//v1/ticketService/numSeatsAvailable
+* curl -i http://localhost:8080//v1/ticketService/showAuditoriumMap 2>/dev/null | sed 's/\["/","/;s/"\]//;s/","/,/g' | tr , "\012"; echo
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
-### And coding style tests
 
-Explain what these tests test and why
+## Design notes
 
-```
-Give an example
-```
+Needed to use Java for this project and I felt that a REST API was the most useful and instructive interface.   So I started with this sample code and iteratively refined it: https://spring.io/guides/gs/rest-service/
 
-## Deployment
+Producing a human-readable map of the auditorium wasn't a project requirement but was an important design criterion for me.   The *showAuditoriumMap* REST API returns a JSON object which is a string of strings, and is readily converted to human-readable form using the "sed" and "tr" pipeline provided.
 
-Add additional notes about how to deploy this on a live system
+
 
 ## Built With
 
