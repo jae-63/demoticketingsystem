@@ -1,0 +1,285 @@
+STARTING TEST SUITE
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    29    0    29    0     0     87      0 --:--:-- --:--:-- --:--:--    87
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"Num-seats-available":"297"}
+INITIAL MAP
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri
+ 01 Jun 2018 12:45:14 GMT
+
+
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+
+HOLDING 3 SEATS
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   166    0   130  100    36   3462    958 --:--:-- --:--:-- --:--:--  3513
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":1,"seatsRow":1,"seatsLeftmost":8,"numSeats":3,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  11230   3086 --:--:-- --:--:-- --:--:-- 11909
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":2,"seatsRow":1,"seatsLeftmost":11,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  18362   5046 --:--:-- --:--:-- --:--:-- 18714
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":3,"seatsRow":1,"seatsLeftmost":15,"numSeats":5,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  12655   3477 --:--:-- --:--:-- --:--:-- 13100
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":4,"seatsRow":1,"seatsLeftmost":20,"numSeats":2,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   166    0   130  100    36  13050   3614 --:--:-- --:--:-- --:--:-- 14444
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":5,"seatsRow":2,"seatsLeftmost":7,"numSeats":7,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  11167   3069 --:--:-- --:--:-- --:--:-- 11909
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":6,"seatsRow":2,"seatsLeftmost":14,"numSeats":5,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   166    0   130  100    36  11938   3306 --:--:-- --:--:-- --:--:-- 13000
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":7,"seatsRow":3,"seatsLeftmost":6,"numSeats":9,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  13728   3772 --:--:-- --:--:-- --:--:-- 14555
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":8,"seatsRow":2,"seatsLeftmost":19,"numSeats":8,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  13992   3845 --:--:-- --:--:-- --:--:-- 14555
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":9,"seatsRow":1,"seatsLeftmost":22,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0   132  100    36  13022   3551 --:--:-- --:--:-- --:--:-- 13200
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":10,"seatsRow":3,"seatsLeftmost":15,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+INTERMEDIATE MAP
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri
+ 01 Jun 2018 12:45:14 GMT
+
+
+.......hhhhhhhhhhhhhhhhhh........
+......hhhhhhhhhhhhhhhhhhhh.......
+.....hhhhhhhhhhhhh...............
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0   132  100    36  14008   3820 --:--:-- --:--:-- --:--:-- 14666
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":11,"seatsRow":3,"seatsLeftmost":19,"numSeats":8,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0   132  100    36  13197   3599 --:--:-- --:--:-- --:--:-- 14666
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":12,"seatsRow":3,"seatsLeftmost":27,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  13344   3667 --:--:-- --:--:-- --:--:-- 14555
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"seatHoldIndex":13,"seatsRow":1,"seatsLeftmost":1,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857114,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    73    0    35  100    38   3228   3504 --:--:-- --:--:-- --:--:--  3800
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:14 GMT
+
+{"Reservation-result":"RESERVED-7"}
+MAP FOLLOWING 1ST COMPLETED RESERVATION
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri
+ 01 Jun 2018 12:45:14 GMT
+
+
+hhhh...hhhhhhhhhhhhhhhhhh........
+......hhhhhhhhhhhhhhhhhhhh.......
+.....RRRRRRRRRhhhhhhhhhhhhhhhh...
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+
+NUMBER OF SEATS AVAILABLE FOLLOWING 1ST COMPLETED RESERVATION
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    29    0    29    0     0   3030      0 --:--:-- --:--:-- --:--:--  3222
+{"Num-seats-available":"230"}
+SLEEPING FOR 16 SECONDS
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    85    0    45  100    40   4372   3886 --:--:-- --:--:-- --:--:--  4500
+HTTP/1.1 422 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+{"reason":"FAILURE-999.   No such seat-hold"}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   118    0    80  100    38  14922   7088 --:--:-- --:--:-- --:--:-- 16000
+HTTP/1.1 422 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+{"reason":"FAILURE-4.   At least one held seat 20 in row 1 is no longer 'held'"}
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri
+ 01 Jun 2018 12:45:31 GMT
+
+
+.................................
+.................................
+.....rrrrrrrrr...................
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+
+ASKING FOR 40 seats which is impossible
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    37    0     0  100    37      0   5361 --:--:-- --:--:-- --:--:--  6166
+HTTP/1.1 422 
+Content-Length: 0
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   167    0   131  100    36  19496   5357 --:--:-- --:--:-- --:--:-- 21833
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+{"seatHoldIndex":15,"seatsRow":1,"seatsLeftmost":8,"numSeats":3,"customerEmail":"foo@bar.com","timeHeld":1527857131,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0   132  100    36  14033   3827 --:--:-- --:--:-- --:--:-- 14666
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+{"seatHoldIndex":16,"seatsRow":1,"seatsLeftmost":11,"numSeats":4,"customerEmail":"foo@bar.com","timeHeld":1527857131,"isValid":true}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   168    0   132  100    36  10538   2874 --:--:-- --:--:-- --:--:-- 11000
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 01 Jun 2018 12:45:31 GMT
+
+{"seatHoldIndex":17,"seatsRow":1,"seatsLeftmost":15,"numSeats":5,"customerEmail":"foo@bar.com","timeHeld":1527857131,"isValid":true}
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri
+ 01 Jun 2018 12:45:31 GMT
+
+
+.......hhhHHHHhhhhh..............
+.................................
+.....rrrrrrrrr...................
+.................................
+.................................
+.................................
+.................................
+.................................
+.................................
+
