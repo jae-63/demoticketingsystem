@@ -21,7 +21,7 @@ curl -i http://localhost:8080//v1/ticketService/findAndHoldSeats -X POST -d 'num
 
 curl -i http://localhost:8080//v1/ticketService/reserveSeats -X POST -d 'seatHoldId=7&customerEmail=foo@bar.com'; echo
 echo "MAP FOLLOWING 1ST COMPLETED RESERVATION"
-curl -i 'http://localhost:8080//v1/ticketService/showAuditoriumMap?seatHoldId=7' -X GET 2>/dev/null | sed 's/\["/","/;s/"\]//;s/","/,/g' | tr , "\012"; echo
+curl -i 'http://localhost:8080//v1/ticketService/showAuditoriumMap?seatHoldId=7' 2>/dev/null | sed 's/\["/","/;s/"\]//;s/","/,/g' | tr , "\012"; echo
 echo "NUMBER OF SEATS AVAILABLE FOLLOWING 1ST COMPLETED RESERVATION"
 curl http://localhost:8080//v1/ticketService/numSeatsAvailable; echo
 
