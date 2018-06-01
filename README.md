@@ -48,7 +48,7 @@ You can see a sample output of that suite in testsuite.OUTPUT.txt
 
 I needed to use Java for this project and I felt that a REST API was the most useful and instructive interface.   So I started with this sample code and iteratively refined it: https://spring.io/guides/gs/rest-service/
 
-As a REST API "true believer" I thought it was important to return 422 HTTP codes for API requests which are invalid, such as attempting to reserve a block of seats which haven't been previously *held*.   So I spent a lot of time learning how to make this work in the Spring REST API framework.
+As a REST API "true believer" I thought it was important to return 422 HTTP codes for API requests which are invalid, such as attempting to *reserve* a block of seats which haven't been previously *held*.   So I spent a lot of time learning how to generate 4xx codes in the Spring REST API framework.
 
 Producing a human-readable map of the auditorium wasn't a project requirement but was an important design criterion for me.   The *showAuditoriumMap* REST API returns a JSON object which is a string of strings, and is readily converted to human-readable form using the "sed" and "tr" pipeline provided.   This *showAuditoriumMap* API accepts an optional *seatHoldId" parameter, which if provided causes the associated seats to be highlighted using capital letters, somewhat analogously to a real-world theater booking system.
 
