@@ -168,7 +168,7 @@ public class SeatHold {
                 for (int i=0, seatNum = leftSeatNum; i < numSeats && seatNum <= auditoriumWidth; i++, seatNum++) {
                     int seatScore = scoreSeatQuality(row, seatNum, auditoriumDepth, auditoriumWidth);
                     if (seatScore < 0 || ticketService.getAuditoriumSeatsStatus(row,seatNum) != tickserv.TicketService.SeatStatus.AVAILABLE) {
-                        sumOfScores = 0;
+                        sumOfScores = -1;
                         break;
                     }
                     sumOfScores += seatScore;
