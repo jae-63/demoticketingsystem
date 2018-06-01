@@ -5,11 +5,13 @@ A simple ticketing system, written in Java, providing a REST API
 
 To build the software and run its Unit Tests run:
 ```cd complete
-./gradlew build```
+./gradlew build
+```
 
 To start the REST web server run:
 ```cd complete
-java -jar build/libs/ticket-rest-service-0.1.0.jar```
+java -jar build/libs/ticket-rest-service-0.1.0.jar
+```
 
 and then in another terminal window you can run your own REST queries (see below) or
 run the provided test suite:
