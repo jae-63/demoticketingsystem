@@ -15,14 +15,16 @@ Download or clone the repo.
 ### Installing
 
 To build the software and run its Unit Tests run:
-```cd complete
+```
+cd complete
 ./gradlew build
 ```
 
 ## Running the tests
 
 To start the REST web server run:
-```cd complete
+```
+cd complete
 java -jar build/libs/ticket-rest-service-0.1.0.jar
 ```
 
